@@ -31,7 +31,7 @@ common/.babelrc
     "extends":"../../common/.babelrc", //1
     "plugins":[ //2
         "@babel/plugin-transform-template-literals", //3
-        "@babel/plugin-transform-template-literals"
+        "@babel/plugin-transform-arrow-functions"
     ]
 }
 ```
@@ -138,5 +138,5 @@ overrides 속성 사용 예
 1. 리액트 프리셋과 템플릿 리터럴 플러그인을 설정한다.
 2. overrides 속성을 이용하면 파일별로 다른 설정을 할 수 있다.
 3. service1 폴더 밑에 있는 파일에는 4번 설정을 적용
-5. service1/code2.js 파일에는 4번 설적을 적용하지 않는다. 
+5. service1/code2.js 파일에는 4번 설정을 적용하지 않는다. 
 따라서 service1 폴더 하위에서 code2.js 파일을 제외한 모든 파일에 화살표 함수 플러그인이 적용된다.
